@@ -43,3 +43,34 @@
 > localhost:8080
 
 <br>
+
+还可以把state中的值保存到input的value属性上去。
+
+<br>
+
+> src/components/search_bar.js
+
+<br>
+
+	import React, {Component} from 'react';
+	
+	class SearchBar extends Component {
+	    constructor(props){
+	        super(props);
+	        this.state={term: ''};
+	    }
+	    
+	    render(){
+	        return (
+	            <div>
+	                <input 
+	                    value={this.state.term}
+	                    onChange={(event) => this.setState({term: event.target.value})} />
+	            </div>
+	        );
+	    }
+	        
+	}
+	
+	export default SearchBar;
+
