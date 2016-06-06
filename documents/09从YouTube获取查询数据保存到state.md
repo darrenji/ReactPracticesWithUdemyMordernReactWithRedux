@@ -35,11 +35,13 @@
 	        });        
 	    }
 	    
-	    return (
-	        <div>
-	            <SearchBar />
-	        </div>
-	    )
+        render(){
+            return (
+                <div>
+                    <SearchBar />
+                </div>
+            )        
+        }
 	}
 	
 	ReactDOM.render(<App />, document.querySelector('.container'));
