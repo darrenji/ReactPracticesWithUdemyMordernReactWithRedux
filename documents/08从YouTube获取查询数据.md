@@ -4,7 +4,7 @@
 
 <br>
 
-> src/components/search_bar.js
+> src/index.js
 
 <br>
 
